@@ -84,6 +84,13 @@ class Drink(db.Model):
             'recipe': json.loads(self.recipe)
         }
 
+    def longg(self):
+        return {
+            'id': self.id,
+            'title': self.title,
+            'recipe': json.loads(self.recipe)
+        }
+
     '''
     insert()
         inserts a new model into a database
